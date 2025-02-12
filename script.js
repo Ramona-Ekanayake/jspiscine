@@ -50,7 +50,7 @@ function populateQuestList(data) {
                         <h2>${exercise.name}</h2>
                         <p><strong>Expected Files:</strong> ${exercise.attrs.expectedFiles ? exercise.attrs.expectedFiles.join(', ') : 'N/A'}</p>
                         <p><strong>Exercise Type:</strong> ${exercise.attrs.exerciseType}</p>
-                        <p><strong>Subject:</strong> ${exercise.attrs.subject ? `<a href="https://github.com/01-edu/public/tree/master${exercise.attrs.subject.replace('/markdown/root', '')}" target="_blank">https://github.com/01-edu/public/tree/master${exercise.attrs.subject.replace('/markdown/root', '')}</a>` : 'N/A'}</p>
+                        <p><strong>Subject:</strong> ${exercise.attrs.subject ? `<a href="https://github.com/01-edu/public/tree/master${exercise.attrs.subject.replace('/markdown/root/public', '')}" target="_blank">https://github.com/01-edu/public/tree/master${exercise.attrs.subject.replace('/markdown/root/public', '')}</a>` : 'N/A'}</p>
                         ${exercise.attrs.groupSize ? `<p><strong>Group Size:</strong> ${exercise.attrs.groupSize}</p>` : ''}
                         ${exercise.attrs.auditsRequired ? `<p><strong>Audits Required:</strong> ${exercise.attrs.auditsRequired}</p>` : ''}
                         ${exercise.attrs.audit ? `<p><strong>Audit Link:</strong> <a href="${exercise.attrs.audit}" target="_blank">${exercise.attrs.audit}</a></p>` : ''}
@@ -102,7 +102,7 @@ function populateQuestList(data) {
                 <h2>${topic.name}</h2>
                 <p><strong>Expected Files:</strong> ${topic.attrs.expectedFiles ? topic.attrs.expectedFiles.join(', ') : 'N/A'}</p>
                 <p><strong>Exercise Type:</strong> ${topic.attrs.exerciseType}</p>
-                <p><strong>Subject:</strong> ${topic.attrs.subject ? `<a href="https://github.com/01-edu/public/tree/master${topic.attrs.subject.replace('/markdown/root', '')}" target="_blank">https://github.com/01-edu/public/tree/master${topic.attrs.subject.replace('/markdown/root', '')}</a>` : 'N/A'}</p>
+                <p><strong>Subject:</strong> ${topic.attrs.subject ? `<a href="https://github.com/01-edu/public/tree/master${topic.attrs.subject.replace('/markdown/root/public', '')}" target="_blank">https://github.com/01-edu/public/tree/master${topic.attrs.subject.replace('/markdown/root/public', '')}</a>` : 'N/A'}</p>
                 ${topic.attrs.groupSize ? `<p><strong>Group Size:</strong> ${topic.attrs.groupSize}</p>` : ''}
                 ${topic.attrs.auditsRequired ? `<p><strong>Audits Required:</strong> ${topic.attrs.auditsRequired}</p>` : ''}
                 ${topic.attrs.audit ? `<p><strong>Audit Link:</strong> <a href="${topic.attrs.audit}" target="_blank">${topic.attrs.audit}</a></p>` : ''}
