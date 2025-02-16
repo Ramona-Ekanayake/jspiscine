@@ -16,7 +16,7 @@ function populateQuestList(data) {
 
     // Loop through each topic in the JSON data
     for (const topicKey in data.children) {
-        if (data.children.hasOwnProperty(topicKey) && !['tron', 'sortable', 'clonernews'].includes(topicKey)) {
+        if (data.children.hasOwnProperty(topicKey) && !['crossword', 'sortable', 'clonernews'].includes(topicKey)) {
             const topic = data.children[topicKey];
 
             // Create a new div element for each topic
@@ -70,8 +70,8 @@ function populateQuestList(data) {
         }
     }
 
-    // Handle "tron", "sortable", and "clonernews" separately
-    const specialTopics = ['tron', 'sortable', 'clonernews'];
+    // Handle "crossword", "sortable", and "clonernews" separately
+    const specialTopics = ['crossword', 'sortable', 'clonernews'];
     specialTopics.forEach(topicKey => {
         if (data.children.hasOwnProperty(topicKey)) {
             const topic = data.children[topicKey];
